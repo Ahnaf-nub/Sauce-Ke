@@ -1,0 +1,64 @@
+body {
+    background: url("https://i.pinimg.com/originals/1f/3c/e3/1f3ce3f2fb77aeb542d616158e3b40a7.gif") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    background-color: rgba(120, 57, 145, 0.856); /* Slight transparency to see background through */
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(179, 106, 238, 0.89);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    color: #ff69b4;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+#anime-image {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.submit-button {
+    background-color: #d75fe7;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.submit-button:hover {
+    background-color: #480069;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
