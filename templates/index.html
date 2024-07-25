@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Sauce Finder</title>
+</head>
+<style>
+    body {
+        background-color: #f0f0f0;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+    }
+
+    h1 {
+        color: #ff69b4;
+        margin-bottom: 20px;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    .upload-section {
+        margin-bottom: 20px;
+    }
+
+    .upload-label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #333;
+    }
+
+    #anime-image {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .submit-button {
+        background-color: #ff69b4;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .submit-button:hover {
+        background-color: #ff1493;
+    }
+
+    .result {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Sauce Ke</h1>
+        <form id="sauce-form" action="/upload" method="post" enctype="multipart/form-data">
+            <div class="upload-section">
+                <label for="anime-image" class="upload-label">Choose an image</label>
+                <input type="file" id="anime-image" name="anime-image" accept="image/*" required>
+            </div>
+            <button type="submit" class="submit-button">Find Anime</button>
+        </form>
+        {% if anime_name %}
+        <div id="result" class="result">
+            Anime Name: {{ anime_name }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
