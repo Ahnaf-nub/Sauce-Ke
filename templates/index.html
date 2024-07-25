@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Sauce Finder</title>
+    <title>Sauce Ke</title>
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Anime Sauce Finder</h1>
+        <h1>Sauce Ke</h1>
         <form id="sauce-form" action="/upload" method="post" enctype="multipart/form-data">
             <div class="upload-section">
-                <label for="anime-image" class="upload-label">Choose an image</label>
-                <input type="file" id="anime-image" name="anime-image" accept="image/*" required>
+                <label for="anime_image" class="upload-label">Choose an image</label>
+                <input type="file" id="anime_image" name="anime_image" accept="image/*" required>
             </div>
             <button type="submit" class="submit-button">Find Anime</button>
         </form>
         {% if anime_name %}
         <div id="result" class="result">
-            Anime Name: {{ anime_name }}
+            <h2>{{ anime_name }}</h2>
         </div>
         {% endif %}
     </div>
 </body>
 </html>
+
