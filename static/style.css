@@ -1,7 +1,6 @@
 body {
     background: url("https://i.pinimg.com/originals/1f/3c/e3/1f3ce3f2fb77aeb542d616158e3b40a7.gif") no-repeat center center fixed;
-    /*background-size: cover;*/
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     font-family: 'Arial', sans-serif;
     display: flex;
