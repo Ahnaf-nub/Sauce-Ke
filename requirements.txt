@@ -1,3 +1,4 @@
+Pillow
 fastapi
 uvicorn
 google-generativeai
