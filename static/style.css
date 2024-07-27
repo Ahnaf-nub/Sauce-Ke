@@ -3,7 +3,6 @@ body {
     background-size: cover;
     font-family: 'Arial', sans-serif;
     display: flex;
-    width: 500px;
     justify-content: center;
     align-items: center;
     height: 100vh;
