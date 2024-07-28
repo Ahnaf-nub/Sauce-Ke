@@ -21,10 +21,15 @@ body {
     width: 300px;
 }
 
+@font-face {
+    font-family: shaifontai;
+    src: url(SF_Shai_Fontai.ttf);
+}
+
 h1 {
     color: #ff69b4;
     margin-bottom: 20px;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: shaifontai;
 }
 
 .upload-section {
