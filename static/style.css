@@ -1,21 +1,22 @@
 body {
-    background: url("https://i.pinimg.com/originals/1f/3c/e3/1f3ce3f2fb77aeb542d616158e3b40a7.gif") no-repeat center center fixed;
     background-size: cover;
     background-position: center;
+    background: url("https://i.pinimg.com/originals/1f/3c/e3/1f3ce3f2fb77aeb542d616158e3b40a7.gif") no-repeat center center scroll;
+    background-size: cover;
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     margin: 0;
     position: relative;
 }
 
 .container {
-    background-color: rgba(120, 57, 145, 0.856); /* Slight transparency to see background through */
+    background-color: rgba(113, 49, 138, 0.856); /* Slight transparency to see background through */
     border-radius: 25px;
-    box-shadow: 0 0 20px rgba(179, 106, 238, 0.89);
-    padding: 20px;
+    box-shadow: 0 0 20px rgba(178, 106, 238, 0.774);
+    padding: 40px;
     text-align: center;
     width: 300px;
 }
@@ -32,20 +33,20 @@ h1 {
 
 .upload-label {
     display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #1b1a1a;
 }
 
-#anime-image {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
+#anime_image {
+    border: 1px solid #00000063;
+    border-radius: 15px;
+    padding: 8px;
+    width: 200px;
 }
 
 .submit-button {
-    background-color: #d75fe7;
+    background-color: #791985e7;
     border: none;
     border-radius: 20px;
     color: #fff;
@@ -55,7 +56,7 @@ h1 {
 }
 
 .submit-button:hover {
-    background-color: #480069;
+    background-color: #480069c2;
 }
 
 .result {
