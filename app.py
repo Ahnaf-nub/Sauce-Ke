@@ -1,6 +1,13 @@
+from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
+from starlette.requests import Request
+import io
 import os
 import PIL.Image as Image
 import google.generativeai as genai
+
 from dotenv import load_dotenv
 load_dotenv()
 
