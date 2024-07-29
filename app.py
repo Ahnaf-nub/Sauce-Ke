@@ -1,17 +1,12 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
-from fastapi.responses import HTMLResponse
-from fastapi.templating import Jinja2Templates
-from fastapi.staticfiles import StaticFiles
-from starlette.requests import Request
-import io
 import os
 import PIL.Image as Image
 import google.generativeai as genai
-
+from dotenv import load_dotenv
+load_dotenv()
 
 app = FastAPI()
-GOOGLE_API_KEY = "AIzaSyD-iOD7OtQz9iEztMGzjadZCcP__R1ABS4"
-genai.configure(api_key=GOOGLE_API_KEY) #'AIzaSyD-iOD7OtQz9iEztMGzjadZCcP__R1ABS4
+GOOGLE_API_KEY = os.getenv('API_KEY')
+genai.configure(api_key=GOOGLE_API_KEY)
 
 model = genai.GenerativeModel('gemini-1.5-flash')
 
