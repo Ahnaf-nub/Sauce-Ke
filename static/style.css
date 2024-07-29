@@ -1,3 +1,7 @@
+@font-face {
+    font-family: shaifontai;
+    src: url(SF_Shai_Fontai.ttf);
+}
 body {
     background-size: cover;
     background-position: center;
@@ -13,23 +17,20 @@ body {
 }
 
 .container {
-    background-color: rgba(113, 49, 138, 0.856); /* Slight transparency to see background through */
+    background-color: rgba(113, 49, 138, 0.856);
     border-radius: 25px;
-    box-shadow: 0 0 20px rgba(178, 106, 238, 0.774);
+    box-shadow: 0 0 20px rgb(133, 40, 209);
+    opacity: 95%;
     padding: 40px;
     text-align: center;
     width: 300px;
-}
-
-@font-face {
-    font-family: shaifontai;
-    src: url(SF_Shai_Fontai.ttf);
 }
 
 h1 {
     color: #ff69b4;
     margin-bottom: 20px;
     font-family: shaifontai;
+    font-size: 45px;
 }
 
 .upload-section {
@@ -62,6 +63,13 @@ h1 {
 
 .submit-button:hover {
     background-color: #480069c2;
+}
+
+footer {
+    position: absolute;
+    margin-bottom: 400px;
+    font-size: 12px;
+    color: #242121d5;
 }
 
 .result {

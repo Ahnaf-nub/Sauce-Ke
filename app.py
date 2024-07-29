@@ -7,12 +7,11 @@ import io
 import os
 import PIL.Image as Image
 import google.generativeai as genai
-from dotenv import load_dotenv
-load_dotenv()
+
 
 app = FastAPI()
-GOOGLE_API_KEY = os.getenv('API_KEY')
-genai.configure(api_key=GOOGLE_API_KEY)
+GOOGLE_API_KEY = "AIzaSyD-iOD7OtQz9iEztMGzjadZCcP__R1ABS4"
+genai.configure(api_key=GOOGLE_API_KEY) #'AIzaSyD-iOD7OtQz9iEztMGzjadZCcP__R1ABS4
 
 model = genai.GenerativeModel('gemini-1.5-flash')
 
